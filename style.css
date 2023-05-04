@@ -1,0 +1,416 @@
+*{
+	margin:0;
+	padding:0;
+	border: 0;
+	font-family: "lora-regular", serif;
+	border-sizing:border-box;
+}
+body{
+	background: floralwhite;
+	color:black;
+}
+#header{
+	/*width:100%;
+	height:100vh;
+	background-image: url(C:/Users/admin/Desktop/portfolio/img/img1.jpg);
+	backgroud-size:cover;
+	background-position:200%;
+   */
+}
+
+.container{
+	padding:10px 10px;
+	background-image: url(C:/Users/admin/Desktop/portfolio/img/img1.jpg);
+    background-postion:center;
+}
+
+.logo{
+	width:140px;
+}
+
+nav ul li{
+	display: inline-block;
+	list-style: none;
+	margin:10px 20px;
+}
+
+nav ul li a{
+	color:#fff;
+	text-decoration:none;
+	font-size: 20px;
+	postion:relative;
+
+}
+
+nav{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+nav ul li a::after{
+	content:'';
+	width:100%;
+	height:3px;
+	background:#ff004f;
+	postion:absolute;
+	left:0;
+	bottom:-6px;
+}
+
+nav ul li a:link, a:visited {
+  
+  color: #4C0121;
+  font-weight: bolder;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+nav ul li a:hover, a:active {
+  background-color: #4C0121;
+  color: white;
+
+  
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+
+.header-text{
+	margin-top: 10%;
+	font-size:30px;
+	text-align: center;
+	margin-bottom: 10%;
+}
+
+.header-text h1{
+	font-size: 120px;
+	margin-top:10px;
+	margin-bottom: 20px;
+	color: #4C0121;
+}
+
+ /*---------------About Me --------------------*/
+
+
+#about{
+	padding-top: 30px;
+	color: #4C0121;
+	
+}
+.container1{
+	margin-bottom: 5px;
+	margin-left: 30%;
+	margin-right: 30%;
+}
+.row{
+	text-align: center;
+	font-family: "lora-regular", serif;
+    font-size: 2rem;
+    line-height: 1.8;
+    color: #4C0121;
+    font-weight: bold;
+
+}
+
+
+
+.container1{
+	padding: 10px 10px;
+	background-position: center;
+
+}
+/*------------------resume button ----------*/
+.button_wrap{
+	 display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 10%;
+  
+  
+  
+}
+.button {
+  background-color: #BE93D4; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  
+
+  font-size: 20px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+
+
+  /*-------------------*/
+   display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+
+
+.button3 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #4C0121;
+}
+
+.button3:hover {
+  background-color: #4C0121;
+  color: white;
+}
+
+
+/* ------------------------ skils-------------*/
+.skills{
+   padding-top: none;
+   padding-bottom: 20px;
+
+}
+.wrapper{
+   width: 40%;
+    min-width: 590px;
+
+    left: 50%;
+    top: 50%;
+      margin: auto;
+  width: 60%;
+  padding-top: -10px;
+  
+  
+   
+    
+}
+.container-skill{
+    width: 100%;
+    padding: 30px 30px 50px;
+    background-color: #4C0121;
+    border-radius: 10px;
+   /* box-shadow: 10px 20px 30px rgba(0.75,0,0,0.75);*/
+     box-shadow: rgba(0, 0, 0, 0.7);
+
+} 
+
+.container-skill *{
+    font-family: "Poppins",sans-serif;
+    color: beige;
+    font-weight: 500;
+
+}
+h2{
+    margin-bottom: 50px;
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 33px;
+    font-weight: bold;
+}
+.details{
+    width: 100%;
+    display: flex;  
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.bar{
+    position: relative;
+
+    /*border: 2px solid;*/
+
+    border-radius: 20px;
+
+}
+.bar div{
+    position: relative;
+    width: 0;
+    height: 9px;
+    border-radius: 10px;
+    background-color: white;
+
+
+}
+.skills:not(:last-child){
+    margin-bottom: 30px;
+}
+#html-bar{
+    animation: html-fill 2s forwards;
+}
+@keyframes html-fill{
+    100%{
+        width: 80%;
+    }
+}
+
+#css-bar{
+    animation: css-fill 2s forwards;
+}
+@keyframes css-fill{
+    100%{
+        width: 90%;
+    }
+}
+#javascript-bar{
+    animation: js-fill 2s forwards;
+}
+@keyframes js-fill {
+    100%{
+        width: 70%;
+    }
+}
+
+#jQuery-bar{
+    animation: jQuery-fill 2s forwards;
+}
+@keyframes jQuery-fill{
+    100%{
+        width: 65%;
+    }
+} 
+
+/*------------------contact me ---------------*/
+.contact_text{
+	text-align: center;
+
+}
+.contact_text h2{
+	color: #BE93D4;
+
+}
+.contact_text h1{
+	text-align: center;
+	color:#4C0121 ;
+}
+/*------------projects -------------*/
+.final-section{
+    position: fixed;
+}
+.p{
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+
+.column-projects {
+  float: left;
+   height: 200px;
+  justify-content:center ;
+  width: 23.5%;
+ 
+  margin: .0.5rem;
+  padding-top: 2%;
+
+  
+  /*box-shadow: 0 4px 8px 0  rgba(0, 0, 0, 0.7), 0 6px 20px 0 rgba(0, 0, 0, 0.7);*/
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+  transition: 0.3s;
+
+  
+}
+
+/* Clearfix (clear floats) */
+.row-projects::after {
+  content: "";
+  clear: both;
+  display: inline-flex;
+  
+
+}
+img{
+  width:50%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.container-projects-section{
+  padding:10px;
+}
+
+.column-projects h2{
+  text-align: center;
+  color: #4C0121;
+  font-size: 25px;
+  font-weight: bold;
+
+
+}
+.column-projects:hover{
+   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.9);
+}
+
+.a{
+  text-decoration: none;
+}
+
+
+
+
+/*------------------contacts -----------*/
+.contacts{
+  background-color:#d4b8e3;
+  box-sizing: border-box;
+  padding-bottom: none;
+}
+.contacts-headers h1{
+        font-size: 45px;
+        color: #4C0121;
+        text-align: center;
+}
+
+.contacts-headers h2{
+   color: white;
+   text-align: center;
+
+
+}
+
+.icons{
+  width: 48px;
+  height: 48px;
+
+}
+
+
+.column-contacts {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+  height:250px;
+  margin-left: 60px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row-contacts {margin: 0 -5px; margin-left: 20px;
+}
+
+
+/* Clear floats after the columns */
+.row-contacts:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column-contacts {
+    width: 100%;
+    display: block;
+    
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card-contacts {
+  
+  padding: 16px;
+  text-align: center;
+  
+}
